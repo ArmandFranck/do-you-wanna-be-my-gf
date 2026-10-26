@@ -1,56 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hiii</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff4f8">
+  <title>Un petit projet pour toi 💗</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <main class="wrap">
-    <h1>I have a question for you</h1>
-    <p class="sub">Click the envelope</p>
+    <p class="tag">projet spécial</p>
+    <h1>J’ai un petit projet<br><span>pour toi.</span></h1>
+    <p class="sub">Je sais que tu es en train de bosser sur tes devoirs, c’est pour que tu décompresses un peu, petite sorcière 🪄</p>
 
-    <section class="stage">
-      <button id="envelope" class="envelope" type="button" aria-expanded="false">
+    <section class="stage" aria-label="Une lettre surprise">
+      <button id="envelope" class="envelope" type="button" aria-expanded="false" aria-label="Ouvrir la lettre">
         <span class="env-shadow" aria-hidden="true"></span>
         <span class="env-back" aria-hidden="true"></span>
         <span class="env-front" aria-hidden="true"></span>
         <span class="env-flap" aria-hidden="true"></span>
-        <span class="env-text">
-          <span class="t1">For you</span>
-          <span class="t2">Click the envelope</span>
-        </span>
+        <span class="env-text"><span class="t1">For you 💗</span><span class="t2">Open the envelope</span></span>
       </button>
 
       <article id="card" class="card" aria-hidden="true">
-        <header class="card-h">
-          <div class="seal" aria-hidden="true"></div>
-          <div>
-            <div class="kicker">Important question</div>
-            <div class="q">Do you want to be my girlfriend?</div>
-          </div>
-        </header>
-
+        <header class="card-h"><span class="seal" aria-hidden="true">♥</span><div><div class="kicker">Important question</div><h2 class="q">Do you want to be my girlfriend?</h2></div></header>
         <div class="card-b">
-          <p class="text">
-            I promise to make you smile every day, support you in everything you do,
-            and love you with all my heart. Will you be mine?
-          </p>
-
-          <div class="btnrow">
-            <button id="yesBtn" class="btn yes" type="button">Yes</button>
-            <button id="noBtn" class="btn no" type="button">No</button>
+          <p class="text">I promise to make you smile every day, support you in everything you do, and love you with all my heart. Will you be mine babe?</p>
+          <div class="btnrow"><button id="yesBtn" class="btn yes" type="button">Yes 💗</button><button id="noBtn" class="btn no" type="button">No 🙈</button></div>
+          <div id="celebration" class="celebration" hidden aria-live="polite">
+            <img src="celebrate-in-love.gif" alt="Leonardo DiCaprio celebrating with a smile">
+            <p>My dear little princess—and now, my girlfriend—I love you. 💗</p>
           </div>
-
           <p id="note" class="note" aria-live="polite"></p>
         </div>
       </article>
     </section>
-
-    <p class="foot">Tip: if the new tab doesn’t open, check your pop-up blocker.</p>
+    <p class="foot">not forgetting patience, respect and joy</p>
   </main>
-
-  <script src="./script.js" defer></script>
 </body>
 </html>
